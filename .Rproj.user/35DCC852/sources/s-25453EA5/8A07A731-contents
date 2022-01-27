@@ -1,5 +1,0 @@
-library(tidyverse)
-
-lsf.str("package:dplyr")
-
-library(datos)

@@ -1,0 +1,84 @@
+---
+title: "oRden"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## El tidyverse en español
+
+Aprender a programar no es fácil, menos aun si no se conoce bien el idioma ingles. El objetivo de este paquete es facilitar la curva de aprendizaje de programar en R para hispanohablantes. Se han hecho esfuerzos interesantes en traducir al español recursos como fuentes de datos en el paquete DATOS, y este paquete permite 
+
+## Importar datos
+
+## Transformar datos
+
+## Ordenar datos
+
+## Datos del tipo caracter
+
+## Datos del tipo factor
+
+## Iteraciones sobre tablas de datos
+
+## Visualizacion
+
+You can include R code in the document as follows:
+
+```{r cars}
+
+
+library(oRden)
+
+data <- datos::mtautos
+data %>% resumir(avg = mean(millas))
+
+
+
+summary(cars)
+# 
+# library(tidyverse)
+# 
+# lsf.str("package:dplyr")
+# 
+# library(datos)
+# 
+data <- datos::mtautos
+# 
+library(oRden)
+data %>% summarise(avg = mean(millas))
+# 
+# data %>% count(millas)
+# 
+# 
+# data %>% resumir(avg = mean(millas))
+# library(tidyverse)
+# 
+# lsf.str("package:dplyr")
+# 
+# library(datos)
+# 
+# data <- datos::mtautos
+
+
+
+
+# https://github.com/rstudio/cheatsheets/
+
+
+
+# verbos dplyr
+
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
