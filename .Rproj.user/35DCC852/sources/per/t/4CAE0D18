@@ -3,7 +3,7 @@
     "path": "C:/Users/raimu/Dropbox/Github/oRden/README.Rmd",
     "project_path": "README.Rmd",
     "type": "r_markdown",
-    "hash": "97915772",
+    "hash": "170994681",
     "contents": "",
     "dirty": false,
     "created": 1643296421336.0,
@@ -12,16 +12,16 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "36,0",
-        "scrollLine": "14",
-        "last_setup_crc32": "E90088E1bb338d19"
+        "cursorPosition": "17,138",
+        "scrollLine": "0",
+        "last_setup_crc32": "23C47094bb338d19"
     },
     "folds": "",
-    "lastKnownWriteTime": 1643299544,
+    "lastKnownWriteTime": 1643300974,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1643299544165,
+    "last_content_update": 1643300974618,
     "read_only": false,
     "read_only_alternatives": []
 }

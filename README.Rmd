@@ -15,7 +15,7 @@ Este paquete traduce los principales verbos utilizados por el Tidyverse, un conj
 
 El Tidyverse tiene la virtud de haber desarrollado una sintaxis propia que permite leer el codigo de manera mas fluida. Hoy es considerado practicamente un dialecto diferente al de R base, pero es perfecto para aprender a programar en R.
 
-Se han hecho otros esfuerzos interesantes en traducir al español recursos de R como fuentes de datos en el (paquete datos), el libro de Hadley Wickam para ciencia de datos (https://es.r4ds.hadley.nz/), y algunas planillas de atajos para los distintos paquetes de este universo (https://www.rstudio.com/resources/cheatsheets/).  
+Se han hecho otros esfuerzos interesantes en traducir al español recursos de R como fuentes de datos en la libreria datos `library(datos)`, el [libro de Hadley Wickam para ciencia de datos](https://es.r4ds.hadley.nz/), y algunas [planillas de atajos](https://www.rstudio.com/resources/cheatsheets/) (cheatsheets en ingles) para los distintos paquetes de este universo .  
 
 
 ``` r
@@ -26,26 +26,42 @@ remotes::install_github("raimun2/oRden")
 
 ```{r cars}
 
-
 library(oRden)
-library(datos)
 
 autos <- datos::mtautos
 
-autos %>% resumir(media = mean(millas))
+autos %>% 
+  mutar(kilometros = millas / 1.6) %>% 
+  seleccionar(kilometros, cambios, forma) %>% 
+  agrupar_por(cambios, forma) %>% 
+  resumir(minimo = min(kilometros))
 
 ```
 
-## Importar datos
+
 
 ## Transformar datos
 
+En el modulo de transformacion de datos se tradujeron los principales verbos de la libreria dplyr
+
+```{r}
+lsf.str("package:oRden")
+```
+
+## Importar datos
+PENDIENTE (readr)
+
 ## Ordenar datos
+PENDIENTE (tidyr)
 
 ## Datos del tipo caracter
+PENDIENTE (stringr)
 
 ## Datos del tipo factor
+PENDIENTE (forcats)
 
 ## Iteraciones sobre tablas de datos
+PENDIENTE (purrr)
 
 ## Visualizacion
+PENDIENTE (ggplot2)
