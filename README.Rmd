@@ -1,5 +1,5 @@
 ---
-title: "oRden"
+title: "Datos oRdenados"
 output: github_document
 ---
 
@@ -9,20 +9,21 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## El tidyverse en español
 
-Aprender a programar no es fácil, menos aun si no se conoce bien el idioma ingles. El objetivo de este paquete es facilitar la curva de aprendizaje de programar en R para hispanohablantes. 
+Aprender a programar no es fácil, menos aún si no se conoce bien el idioma inglés. El objetivo de este paquete es facilitar la curva de aprendizaje de programar en R para hispanohablantes. 
 
 Este paquete traduce los principales verbos utilizados por el Tidyverse, un conjunto de herramientas ampliamente utilizadas en el mundo de la ciencia de datos, con una comunidad muy activa y colaborativa. 
 
-El Tidyverse tiene la virtud de haber desarrollado una sintaxis propia que permite leer el codigo de manera mas fluida. Hoy es considerado practicamente un dialecto diferente al de R base, pero es perfecto para aprender a programar en R.
+El Tidyverse tiene la virtud de haber desarrollado una sintaxis propia que permite leer el código de manera más fluida. Hoy es considerado prácticamente un dialecto diferente al de R base, pero es perfecto para aprender a programar en R.
 
-Se han hecho otros esfuerzos interesantes en traducir al español recursos de R como fuentes de datos en la libreria datos `library(datos)`, el [libro de Hadley Wickam para ciencia de datos](https://es.r4ds.hadley.nz/), y algunas [planillas de atajos](https://www.rstudio.com/resources/cheatsheets/) (cheatsheets en ingles) para los distintos paquetes de este universo .  
+Se han hecho otros esfuerzos interesantes en traducir al español recursos de R como fuentes de datos en la librería datos `library(datos)`, el [libro de Hadley Wickham para ciencia de datos](https://es.r4ds.hadley.nz/), y algunas [planillas de atajos](https://www.rstudio.com/resources/cheatsheets/) (cheatsheets en inglés) para los distintos paquetes de este universo.
 
+Esta herramienta esta en vías de desarrollo, y por el momento solo se puede instalar desde GitHub
 
 ``` r
 # install.packages("remotes")
 remotes::install_github("raimun2/oRden")
 ```
-
+## Ejemplo de uso 
 
 ```{r cars}
 
@@ -38,30 +39,43 @@ autos %>%
 
 ```
 
+## Importar datos
 
-
-## Transformar datos
-
-En el modulo de transformacion de datos se tradujeron los principales verbos de la libreria dplyr
+En el módulo de importar datos se tradujeron los principales verbos de la librería readr
 
 ```{r}
-lsf.str("package:oRden")
+
+source("R/importaR.R", echo = TRUE, local = knitr::knit_global())
+
 ```
 
-## Importar datos
-PENDIENTE (readr)
+
+## Transformar datos 
+
+En el módulo de transformación de datos se tradujeron los principales verbos de la librería dplyr
+
+```{r}
+
+source("R/transformaR.R", echo = TRUE, local = knitr::knit_global())
+
+```
 
 ## Ordenar datos
-PENDIENTE (tidyr)
+
+En el módulo de ordenar datos se tradujeron los principales verbos de la librería tidyr
+
+```{r}
+
+source("R/ordenaR.R", echo = TRUE, local = knitr::knit_global())
+
+```
 
 ## Datos del tipo caracter
-PENDIENTE (stringr)
 
-## Datos del tipo factor
-PENDIENTE (forcats)
+En el módulo de trabajar con datos de tipo texto / caracter se tradujeron los principales verbos de la librería stringr
 
-## Iteraciones sobre tablas de datos
-PENDIENTE (purrr)
+```{r}
 
-## Visualizacion
-PENDIENTE (ggplot2)
+source("R/caracteR.R", echo = TRUE, local = knitr::knit_global())
+
+```

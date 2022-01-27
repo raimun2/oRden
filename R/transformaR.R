@@ -1,5 +1,3 @@
-`%>%` <- magrittr::`%>%`
-
 resumir <- function(...) {dplyr::summarise(...)}
 
 contar <- function(...) {dplyr::count(...)}
@@ -39,8 +37,6 @@ mutar <- function(...) {dplyr::mutate(...)}
 transmutar <- function(...) {dplyr::transmute(...)}
 
 renombrar <- function(...) {dplyr::rename(...)}
-
-agregar_columna <- function(...) {tibble::add_column(...)}
 
 agregar_conteo <- function(...) {dplyr::add_count(...)}
 
