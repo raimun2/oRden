@@ -9,7 +9,32 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ## El tidyverse en español
 
-Aprender a programar no es fácil, menos aun si no se conoce bien el idioma ingles. El objetivo de este paquete es facilitar la curva de aprendizaje de programar en R para hispanohablantes. Se han hecho esfuerzos interesantes en traducir al español recursos como fuentes de datos en el paquete DATOS, y este paquete permite 
+Aprender a programar no es fácil, menos aun si no se conoce bien el idioma ingles. El objetivo de este paquete es facilitar la curva de aprendizaje de programar en R para hispanohablantes. 
+
+Este paquete traduce los principales verbos utilizados por el Tidyverse, un conjunto de herramientas ampliamente utilizadas en el mundo de la ciencia de datos, con una comunidad muy activa y colaborativa. 
+
+El Tidyverse tiene la virtud de haber desarrollado una sintaxis propia que permite leer el codigo de manera mas fluida. Hoy es considerado practicamente un dialecto diferente al de R base, pero es perfecto para aprender a programar en R.
+
+Se han hecho otros esfuerzos interesantes en traducir al español recursos de R como fuentes de datos en el (paquete datos), el libro de Hadley Wickam para ciencia de datos (https://es.r4ds.hadley.nz/), y algunas planillas de atajos para los distintos paquetes de este universo (https://www.rstudio.com/resources/cheatsheets/).  
+
+
+``` r
+# install.packages("remotes")
+remotes::install_github("raimun2/oRden")
+```
+
+
+```{r cars}
+
+
+library(oRden)
+library(datos)
+
+autos <- datos::mtautos
+
+autos %>% resumir(media = mean(millas))
+
+```
 
 ## Importar datos
 
@@ -24,61 +49,3 @@ Aprender a programar no es fácil, menos aun si no se conoce bien el idioma ingl
 ## Iteraciones sobre tablas de datos
 
 ## Visualizacion
-
-You can include R code in the document as follows:
-
-```{r cars}
-
-
-library(oRden)
-
-data <- datos::mtautos
-data %>% resumir(avg = mean(millas))
-
-
-
-summary(cars)
-# 
-# library(tidyverse)
-# 
-# lsf.str("package:dplyr")
-# 
-# library(datos)
-# 
-data <- datos::mtautos
-# 
-library(oRden)
-data %>% summarise(avg = mean(millas))
-# 
-# data %>% count(millas)
-# 
-# 
-# data %>% resumir(avg = mean(millas))
-# library(tidyverse)
-# 
-# lsf.str("package:dplyr")
-# 
-# library(datos)
-# 
-# data <- datos::mtautos
-
-
-
-
-# https://github.com/rstudio/cheatsheets/
-
-
-
-# verbos dplyr
-
-```
-
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

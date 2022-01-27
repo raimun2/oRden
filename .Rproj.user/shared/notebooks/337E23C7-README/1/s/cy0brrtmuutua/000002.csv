@@ -1,5 +1,0 @@
-"0","data %>% summarise(avg = mean(millas))
-"
-"2","Error in data %>% summarise(avg = mean(millas)) : 
-  could not find function ""%>%""
-"
